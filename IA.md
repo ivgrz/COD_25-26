@@ -54,15 +54,15 @@ El uso de datos personales por sistemas de IA plantea preocupaciones éticas.*
 
 ### 📊 Impacto en el análisis de datos y el seguimiento del aprendizaje
 
-Sistemas de análisis predictivo:
-Los sistemas de IA pueden analizar las tendencias de los 
+***Sistemas de análisis predictivo:***
+*Los sistemas de IA pueden analizar las tendencias de los 
 estudiantes y hacer predicciones sobre su rendimiento.
 Esto puede ayudar a los educadores a tomar decisiones informadas
-sobre qué métodos de enseñanza son más efectivos.
+sobre qué métodos de enseñanza son más efectivos.*
 
-Educación basada en datos:
-A medida que se recopilan más datos sobre el progreso y las necesidades de los estudiantes,
-los sistemas educativos pueden adaptarse en tiempo real para satisfacer mejor las demandas del alumno. Este enfoque permite una educación más dinámica y centrada en el estudiante.
+***Educación basada en datos:***
+*A medida que se recopilan más datos sobre el progreso y las necesidades de los estudiantes,
+los sistemas educativos pueden adaptarse en tiempo real para satisfacer mejor las demandas del alumno. Este enfoque permite una educación más dinámica y centrada en el estudiante.*
 
 ### <ins>Resumen
 
