@@ -70,4 +70,4 @@ los sistemas educativos pueden adaptarse en tiempo real para satisfacer mejor la
 pero también exige un uso crítico y responsable para evitar la ~~dependencia~~ y asegurar un desarrollo integral del aprendizaje humano.**
 
 
-
+[prueba.py](prueba.py)
