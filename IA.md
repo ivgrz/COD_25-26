@@ -71,3 +71,10 @@ pero también exige un uso crítico y responsable para evitar la ~~dependencia~~
 
 
 [prueba.py](prueba.py)
+
+| Aspectos | uso de ia | sin uso de ia |
+|----------|-----------|---------------|
+|Personalización del Aprendizaje|IA ajusta el contenido según el nivel, estilo y ritmo del estudiante.|El aprendizaje es más uniforme y generalmente sigue un ritmo fijo para todos.|
+|Acceso a Recursos|Acceso inmediato a materiales de aprendizaje, recursos interactivos y tutoriales personalizados.|Depende de la disponibilidad de recursos físicos o materiales educativos convencionales.
+|Asistencia en Tiempo Real|Herramientas como chatbots o tutores virtuales proporcionan ayuda 24/7.|La asistencia solo está disponible durante las horas de clase o en momentos específicos.|
+|Interactividad y Participación|Herramientas interactivas, simulaciones y juegos educativos que aumentan la participación.|Aprendizaje tradicional más centrado en la lectura, la escritura y la clase magistral.|
