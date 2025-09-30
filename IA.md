@@ -1,6 +1,6 @@
 # <Ins>Influencia de las IAs en el aprendizaje humano
 
-![ia.png](img/ia.png)
+![ia2.jpg](img/ia2.jpg)
 
 > CURSO DAM 25-26
 
