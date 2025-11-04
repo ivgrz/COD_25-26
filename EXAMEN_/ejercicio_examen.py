@@ -12,11 +12,11 @@ def obtener_temperaturas():
     temperatura = []
     dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]
 
-    for i in dias:
-        temperatura_dia = int(input(f"Escribe la temperatura del dia {i}: "))
+    for dia in dias:
+        temperatura_dia = int(input(f"Escribe la temperatura del dia {dia}: "))
         temperatura.append(temperatura_dia)
 
-        print(f"En el dia {i} la temperatura es de {temperatura_dia}")
+        print(f"En el dia {dia} la temperatura es de {temperatura_dia}")
         print(temperatura)
 
 obtener_temperaturas()
