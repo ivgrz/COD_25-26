@@ -22,7 +22,7 @@ def obtener_temperaturas():
 obtener_temperaturas()
 
 
-def media_temperaturas(temperatura):
+def media_temperaturas(temperatura: list[int]) -> float :
     """
 
     :param temperatura: Lista de temperaturas de cada dia de una semana
@@ -36,6 +36,6 @@ def media_temperaturas(temperatura):
     print("La lista pasada es: ", temperatura)
     print(f"El valor medio de los grados de temperatura de esta semana es {valor_medio}")
 
-
+    return valor_medio
 
 media_temperaturas(temperatura=[20,15,18,30,25])
