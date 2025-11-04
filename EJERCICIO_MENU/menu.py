@@ -1,4 +1,7 @@
-
+ROJO = 1
+AZUL = 2
+VERDE = 3
+AMARILLO = 4
 def menu():
     print(f"---ELIGE UNA OPCION---")
 
