@@ -18,7 +18,7 @@ def obtener_temperaturas():
 
         print(f"En el dia {dia} la temperatura es de {temperatura_dia}")
         print(temperatura)
-
+    return temperatura
 obtener_temperaturas()
 
 
