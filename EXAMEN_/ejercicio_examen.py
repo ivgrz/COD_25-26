@@ -23,7 +23,13 @@ obtener_temperaturas()
 
 
 def media_temperaturas(temperatura):
+    """
 
+    :param temperatura: Lista de temperaturas de cada dia de una semana
+    :type temperatura: List[int]
+    :returns:El valor medio de las temperaturas
+    :rtype: float
+    """
     valor_medio = sum(temperatura)/len(temperatura)
 
     print(f"SEGUNDA FUNCION")
