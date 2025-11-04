@@ -1,6 +1,6 @@
 
 
-def temperaturas_():
+def obtener_temperaturas():
     """
     Almacena en una lista la temperatura de cada dia de la semana
 
@@ -19,7 +19,7 @@ def temperaturas_():
         print(f"En el dia {i} la temperatura es de {temp}")
         print(temperatura)
 
-temperaturas_()
+obtener_temperaturas()
 
 
 def media_temperaturas(temperatura):
