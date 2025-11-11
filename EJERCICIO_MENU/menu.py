@@ -3,18 +3,18 @@ AZUL = 2
 VERDE = 3
 AMARILLO = 4
 def menu():
-    print(f"---ELIGE UNA OPCION---")
+    print("Opciones [1]rojo \n [2]azul \n [3]verde \n [4]amarillo ")
 
-    while True:
-        opcion = int(input(f"Elige una opcion"))
 
-        if opcion == 1:
+    """
+        if opcion == ROJO:
             print(f"Es rojo")
-        elif opcion == 2:
+        elif opcion == AZUL:
             print(f"Es azul")
-        elif opcion == 3:
+        elif opcion == VERDE:
             print(f"Es verde")
-        elif opcion == 4:
+        elif opcion == AMARILLO:
             print(f"Es amarillo")
         break
+    """
 menu()

@@ -2,7 +2,7 @@ def matrices_suma(A, B):
     """
     Esta funcion calcula la suma de dos matrices ateriormente inicializadas
     :param A: Primera matriz
-    :type A:
+    :type A: 
     :param B:
     :return: La lista con la suma de matrices
     :rtype: list[int]
