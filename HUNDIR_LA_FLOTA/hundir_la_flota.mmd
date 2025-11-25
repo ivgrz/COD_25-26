@@ -1,0 +1,18 @@
+classDiagram
+    class Barco {
+        - nombre: str
+        - longitud: int
+        - golpes_recibidos: int
+        + Barco(nombre: str, longitud: int)
+        + recibir_impacto(self): void
+        + esta_hundido(self): bool
+        + mostrar_estado(self): str?
+ }
+    class Tablero {
+        - dimensiones: Tuple<int, int>
+        - casillas: list<list<int>>
+        + Tablero(tamano: Tuple<int, int>)
+        + mostrar_tablero(): string?
+    }
+
+
