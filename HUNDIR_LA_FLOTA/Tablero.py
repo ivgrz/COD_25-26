@@ -52,7 +52,7 @@ class Tablero:
 
 			if self._verificar_posicion(fila_inicio,columna_inicio):
 				self.colocar_barco(barco,fila_inicio,columna_inicio)
-				print(f"Colocado: {barco.nombre} | Tipo: {barco.tipo} | Coordenada:  {fila_inicio} {columna_inicio} ")
+				print(f"Colocado: {barco.nombre} | Tipo: {barco.tipo} | Coordenada:  ({fila_inicio} , {columna_inicio}) ")
 				return fila_inicio,columna_inicio
 			print(f"ERROR: No se pudo colocar el barco {barco.nombre} aleatoriamente")
 
@@ -62,6 +62,7 @@ class Tablero:
 		if not (0 <= fila < self.filas and 0 <= columna < self.columnas):
 				return "FUERA"
 		valor_casilla = self.casillas[fila][columna]
+		posicion_disparo = (fila,columna)
 
 		if valor_casilla == self.AGUA:
 			self.casillas[fila][columna] = self.FALLO
@@ -73,8 +74,22 @@ class Tablero:
 					barco_entrada['barco'].recibir_golpe()
 					return "IMPACTO"
 			return "IMPACTO"
-		elif valor_casilla in [self.FALLO,self.IMPACTO]:
+		elif valor_casilla == self.IMPACTO:
+
+			for barco_entrada in self.barcos:
+				if barco_entrada['posicion'] == posicion_disparo:
+					barco = barco_entrada['barco']
+
+					if not barco.esta_hundido():
+						barco.recibir_golpe()
+						return "IMPACTO"
+					else:
+						return "REPETIDO"
+			return "ERROR"
+
+		elif valor_casilla == self.FALLO:
 			return "REPETIDO"
+
 		return "ERROR"
 
 
@@ -87,7 +102,8 @@ class Tablero:
 			self.BUQUE:'🚢',
 			self.PORTAAVIONES:'✈️',
 			self.FALLO: '❌',
-			self.IMPACTO: '💥'
+			self.IMPACTO: '💥',
+			7 : '💀'
 
 		}
 
@@ -99,8 +115,23 @@ class Tablero:
 
 		for i, fila in enumerate(self.casillas):
 			linea_imprimir = f"{i:<2}|"
-			for valor in fila:
-				simbolo = mapa_simbolos.get(valor, str(valor))
+			for j, valor in enumerate(fila):
+
+				if valor in [self.SUBMARINO, self.BUQUE, self.PORTAAVIONES]:
+					simbolo = mapa_simbolos.get(self.AGUA)
+				elif valor == self.IMPACTO:
+					barco_r_hundido = False
+					for barco_entrada in self.barcos:
+						if barco_entrada['posicion'] == (i,j):
+							if barco_entrada['barco'].esta_hundido():
+								barco_r_hundido = True
+								break
+					if barco_r_hundido:
+						simbolo = mapa_simbolos.get(7)
+					else:
+						simbolo = mapa_simbolos.get(self.IMPACTO)
+				else:
+					simbolo = mapa_simbolos.get(valor, str(valor))
 				linea_imprimir += f" {simbolo} |"
 
 			lineas_salida.append(linea_imprimir)
